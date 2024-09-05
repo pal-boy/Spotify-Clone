@@ -1,0 +1,700 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body{
+    background-color: black;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.main{
+    display: flex;
+}
+.left{
+    width: 25%;
+    margin: 3px;
+}
+.box1{
+    padding: 0.8rem;
+    border-radius: 1rem;
+    margin: 0.6rem;
+    background-color: rgb(23, 21, 21);
+}
+.right{
+    width: 75%;
+    margin: 3px;
+}
+.invert{
+    filter: invert(1);
+}
+.homesvgtext{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem;
+    margin-top: 2rem;
+    cursor: pointer;
+}
+.hometext{
+    font-size: 1rem;
+    font-weight: bold;
+}
+.searchsvg i{
+    font-size: 24px;
+}
+.searchsvgtext{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem;
+    margin-top: 2rem;
+    cursor: pointer;
+    color: grey;
+    transition: all 0.5s ease-in-out;
+}
+.searchsvgtext:hover{
+    color: black;
+}
+.searchtext{
+    font-size: 1rem;
+    font-weight: bold;
+}
+.box2{
+    padding: 0.8rem;
+    border-radius: 1rem;
+    margin: 0.6rem;
+    background-color: rgb(23, 21, 21);
+}
+.librarysvgtext{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem;
+    cursor: pointer;
+    color: grey;
+}
+.librarytext{
+    font-size: 1rem;
+    font-weight: bold;
+}
+.yourlibraryheader{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.plussvg{
+    cursor: pointer;
+}
+.songlist{
+    max-height: 37vh;
+    overflow: hidden;
+}
+.songlist:hover{
+    overflow-y: scroll;
+}
+.songlist::-webkit-scrollbar{
+    width: 0.20rem;
+    border-radius: 0.125rem;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 0.125rem;
+    background-color: gray;
+}
+.songlist ul{
+    list-style-type: decimal;
+    width: 19vw;
+    margin-left: 0rem;
+}
+.songlist ul li{
+    margin: 1rem;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+footer{
+    margin-top: 2rem;
+}
+footer ul{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 2px;
+}
+footer ul li{
+    cursor: pointer;
+}
+.globetext{
+    font-size: 0.8rem;
+}
+.globesvgtext{
+    display: flex;
+    gap: 0.6rem;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid grey;
+    border-radius: 1rem;
+    width: 6vw;
+    padding-top: 2px;
+    cursor: pointer;
+    transition: all 0.6s ease-in-out;
+}
+.globesvgtext:hover{
+    transform: scale(1.1);
+    border: 1px solid black;
+}
+.left-right-arrow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.left-arrow{
+    cursor: pointer;
+}
+.right-arrow{
+    cursor: pointer;
+}
+.signup-login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.signup{
+    padding: 0.7rem;
+    font-size: 1.3rem;
+    color: grey;
+    cursor: pointer;
+    transition: all 0.6s ease-in-out;
+}
+.signup:hover{
+    transform: scale(1.1);
+    color: black;
+}
+.login{
+    border: 1px solid black;
+    padding: 0.7rem 1.5rem 0.7rem 1.5rem;
+    font-size: 1.1rem;
+    color: white;
+    background-color: black;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: all 0.6s ease-in-out;
+}
+.login:hover{
+    transform: scale(1.1);
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 1.3rem 0rem 1rem;
+}
+.hamberger{
+    display: none;
+}
+.small-screen{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.close{
+    display: none;
+}
+.artistsheader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 1.3rem 0rem 1rem;
+    width: 71vw;
+}
+.artistsheader>p{
+    font-size: 1.5rem;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.artistsheader>span{
+    cursor: pointer;
+}
+.artist1{
+    background-color: rgb(242, 239, 239);
+    padding: 8px 5px;
+    cursor: pointer;
+    position: relative;
+}
+.artist2{
+    background-color: rgb(242, 239, 239);
+    padding: 8px 5px;
+    cursor: pointer;
+    position: relative;
+}
+.artist3{
+    background-color: rgb(242, 239, 239);
+    padding: 8px 5px;
+    cursor: pointer;
+    position: relative;
+}
+.artist4{
+    background-color: rgb(242, 239, 239);
+    padding: 8px 5px;
+    cursor: pointer;
+    position: relative;
+}
+.artist5{
+    background-color: rgb(242, 239, 239);
+    padding: 8px 5px;
+    cursor: pointer;
+    position: relative;
+}
+.artists img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    margin-left: 1.4rem;
+}
+.artists p{
+    font-size: 1.2rem;
+    font-weight: bolder;
+    margin-bottom: 2px;
+}
+.artists span{
+    color: gray;
+}
+.artists{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    /* width: 71vw; */
+}
+.artist1 i{
+    font-size: 3.5rem;
+    background-color: rgb(14, 179, 72);
+    border-radius: 50%;
+    position: absolute;
+    top: 10rem;
+    right: 1.8rem;
+    animation: playbtn 1s 1;
+    transition: all 1s ease-in-out;
+    display: none;
+}
+.artist1:hover i{
+    display: block;
+}
+.artist2 i{
+    font-size: 3.5rem;
+    background-color: rgb(14, 179, 72);
+    border-radius: 50%;
+    position: absolute;
+    top: 10rem;
+    right: 1.8rem;
+    animation: playbtn 1s 1;
+    transition: all 1s ease-in-out;
+    display: none;
+}
+.artist2:hover i{
+    display: block;
+}
+.artist3 i{
+    font-size: 3.5rem;
+    background-color: rgb(14, 179, 72);
+    border-radius: 50%;
+    position: absolute;
+    top: 10rem;
+    right: 1.8rem;
+    animation: playbtn 1s 1;
+    transition: all 1s ease-in-out;
+    display: none;
+}
+.artist3:hover i{
+    display: block;
+}
+.artist4 i{
+    font-size: 3.5rem;
+    background-color: rgb(14, 179, 72);
+    border-radius: 50%;
+    position: absolute;
+    top: 10rem;
+    right: 1.8rem;
+    animation: playbtn 1s 1;
+    transition: all 1s ease-in-out;
+    display: none;
+}
+.artist4:hover i{
+    display: block;
+}
+.artist5 i{
+    font-size: 3.5rem;
+    background-color: rgb(14, 179, 72);
+    border-radius: 50%;
+    position: absolute;
+    top: 10rem;
+    right: 1.8rem;
+    animation: playbtn 1s 1;
+    transition: all 1s ease-in-out;
+    display: none;
+}
+.artist5:hover i{
+    display: block;
+}
+@keyframes playbtn{
+    from{
+        top: 9rem;
+        right: 1.5rem;
+    }
+    to{
+        top: 10rem;
+        right: 1.8rem;
+    }
+}
+.spotifyplaylistheader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 1.3rem 0rem 1rem;
+    width: 71vw;
+}
+.spotifyplaylistheader>p{
+    font-size: 1.5rem;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.spotifyplaylistheader>span{
+    cursor: pointer;
+}
+.playlists img{
+    height: 200px;
+    width: 200px;
+    margin-left: 1.4rem;
+}
+.playlists p{
+    font-size: 1.2rem;
+    font-weight: bolder;
+    margin-bottom: 2px;
+}
+.playlists span{
+    color: gray;
+}
+.playlists{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+}
+.playlist1{
+    background-color: rgb(242, 239, 239);
+    padding: 8px 5px;
+    cursor: pointer;
+    position: relative;
+}
+.playlist2{
+    background-color: rgb(242, 239, 239);
+    padding: 8px 5px;
+    cursor: pointer;
+    position: relative;
+}
+.playlist3{
+    background-color: rgb(242, 239, 239);
+    padding: 8px 5px;
+    cursor: pointer;
+    position: relative;
+}
+.playlist4{
+    background-color: rgb(242, 239, 239);
+    padding: 8px 5px;
+    cursor: pointer;
+    position: relative;
+}
+.playlist5{
+    background-color: rgb(242, 239, 239);
+    padding: 8px 5px;
+    cursor: pointer;
+    position: relative;
+}
+.playlist1 i{
+    font-size: 3.5rem;
+    background-color: rgb(14, 179, 72);
+    border-radius: 50%;
+    position: absolute;
+    top: 10rem;
+    right: 1.8rem;
+    animation: playbtn 1s 1;
+    transition: all 1s ease-in-out;
+    display: none;
+}
+.playlist1:hover i{
+    display: block;
+}
+.playlist2 i{
+    font-size: 3.5rem;
+    background-color: rgb(14, 179, 72);
+    border-radius: 50%;
+    position: absolute;
+    top: 10rem;
+    right: 1.8rem;
+    animation: playbtn 1s 1;
+    transition: all 1s ease-in-out;
+    display: none;
+}
+.playlist2:hover i{
+    display: block;
+}
+.playlist3 i{
+    font-size: 3.5rem;
+    background-color: rgb(14, 179, 72);
+    border-radius: 50%;
+    position: absolute;
+    top: 10rem;
+    right: 1.8rem;
+    animation: playbtn 1s 1;
+    transition: all 1s ease-in-out;
+    display: none;
+}
+.playlist3:hover i{
+    display: block;
+}
+.playlist4 i{
+    font-size: 3.5rem;
+    background-color: rgb(14, 179, 72);
+    border-radius: 50%;
+    position: absolute;
+    top: 10rem;
+    right: 1.8rem;
+    animation: playbtn 1s 1;
+    transition: all 1s ease-in-out;
+    display: none;
+}
+.playlist4:hover i{
+    display: block;
+}
+.playlist5 i{
+    font-size: 3.5rem;
+    background-color: rgb(14, 179, 72);
+    border-radius: 50%;
+    position: absolute;
+    top: 10rem;
+    right: 1.8rem;
+    animation: playbtn 1s 1;
+    transition: all 1s ease-in-out;
+    display: none;
+}
+.playlist5:hover i{
+    display: block;
+}
+@keyframes playbtn{
+    from{
+        top: 9rem;
+        right: 1.5rem;
+    }
+    to{
+        top: 10rem;
+        right: 1.8rem;
+    }
+}
+.rightmainbox{
+    max-height: 75vh;
+    overflow-y: hidden;
+    /* width: fit-content; */
+}
+.rightmainbox:hover{
+    overflow-y: scroll;
+}
+.rightmainbox::-webkit-scrollbar{
+    width: 0.20rem;
+    border-radius: 0.125rem;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 0.125rem;
+    background-color: gray;
+}
+.card1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem;
+    height: 8vh;
+    border: 2px solid rgb(30, 29, 29);
+    border-radius: 5px;
+}
+.songcard:hover{
+    background-color: #bfbcbc;
+}
+.playnow i:hover{
+    transform: scale(1.2);
+}
+.playbarInfo{
+    height: 2.5rem;
+    border: 2px solid red;
+    border-radius: 4rem;
+    margin-top: 3rem;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+}
+.playbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.playButtons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    font-size: 1.5rem;
+}
+.songInfo{
+    padding: 0.5rem;
+    width: 20rem;
+    margin-left: 2rem;
+}
+.songTime{
+    padding: 0.5rem;
+    width: 8rem;
+}
+.volume{
+    font-size: 1.5rem;
+    margin-right: 3rem;
+    cursor: pointer;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0px;
+}
+.seekbar{
+    height: 2px;
+    border: 1px solid black;
+    width: 95%;
+    margin-left: 2rem;
+    background-color: black;
+    border-radius: 5rem;
+    position: absolute;
+    bottom: 0;
+    cursor: pointer;
+}
+.vol-seekbar{
+    display: block;
+    height: 2px;
+    border: 1px solid black;
+    width: 30%;
+    margin-left: 2rem;
+    background-color: black;
+    border-radius: 1rem;
+    cursor: pointer;
+    margin-left: 5px;
+
+}
+/* .volume:hover + .vol-seekbar{
+    display: block;
+    height: 2px;
+    border: 1px solid black;
+    width: 30%;
+    margin-left: 2rem;
+    background-color: black;
+    border-radius: 1rem;
+    cursor: pointer;
+    margin-left: 0px;
+} */
+.vol-circle{
+    height: 13px;
+    width: 13px;
+    border-radius: 13px;
+    position: relative;
+    bottom: 6px;
+    background-color: black;
+    cursor: pointer;
+    left: 100%;
+    transition: left 0.5s;
+} 
+.circle{
+    height: 15px;
+    width: 15px;
+    border-radius: 13px;
+    position: relative;
+    bottom: 8px;
+    background-color: black;
+    cursor: pointer;
+    left: 0%;
+    transition: left 0.5s;
+} 
+
+  /* Media Queries */
+@media screen and (max-width : 1400px) {
+    .artists{
+        flex-wrap: wrap;
+    }
+    .playlists{
+        flex-wrap: wrap;
+    }
+    .left{
+        position: absolute;
+        left: -100%;
+        height: 100vh;
+        z-index: 1;
+        width: 25rem;
+        transition: all 1s;
+    }
+    .box2{
+        height: 80vh;
+    }
+    .songlist{
+        max-height: 47vh;
+    }
+    .left-right-arrow{
+        display: none;
+    }
+    .hamberger{
+        display: block;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+    .songcard{
+        width: 17rem;
+    }
+    .close{
+        display: block;
+        font-size: 2rem;
+    }
+    .right{
+        width: 100%;
+    }
+    .playbarInfo{
+        height: 3.5rem;
+    }
+    .seekbar{
+        width: 90%;
+    }
+    
+}
+@media screen and (max-width : 600px){
+    .playbar{
+        flex-direction: column;
+    }
+    .playbarInfo{
+        height: 11rem;
+        border-radius: 2rem;
+        margin-top: 2rem;
+        z-index: 1;
+        background-color: #fff;
+        position: sticky;
+        bottom: 0;
+        margin-bottom: 0px;
+    }
+    .songInfo{
+        text-align: center;
+        font-size: 2rem;
+        width: 40rem;
+    }
+    .seekbar{
+        width: 88%;
+        bottom: 1rem;
+    }
+    .songTime{
+        font-size: 1.5rem;
+        width: 15rem;
+        text-align: center;
+    }
+    .vol-seekbar{
+        width: 70%;
+    }
+}
